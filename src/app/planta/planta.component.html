@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre Común</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let planta of plantas">
+          <th scope="row">{{planta.id}}</th>
+          <td>{{planta.nombre_comun}}</td>
+          <td>{{planta.tipo}}</td>
+          <td>{{planta.clima}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
